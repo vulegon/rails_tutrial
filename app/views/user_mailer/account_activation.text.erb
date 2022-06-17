@@ -1,0 +1,5 @@
+こんにちは <%= @user.name %>,
+
+サンプルアプリケーションへようこそ。アカウントを有効化するには以下のURLをクリックしてください。
+
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
